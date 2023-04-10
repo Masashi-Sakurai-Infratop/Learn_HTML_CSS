@@ -36,21 +36,20 @@
 
 .main {
   width: auto;
-  height: 1400px;
-  background-color: green;
+  height: auto;
   display: flex;/*Flexboxの利用*/
   justify-content: center;/*子要素の横並び・中央寄せ*/
 }
 
 .blog {
   width: 600px;
-  height: 600px;
+  height: 1400px;
   background-color: limegreen;
 }
 
 .sidebar {
   width: 240px;
-  height: 600px;
+  height: 1400px;
   background-color: palegreen;
 }
 .footer {
