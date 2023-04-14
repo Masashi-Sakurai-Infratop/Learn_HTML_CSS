@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CARAVAN</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">
+        <a href="index.html">
+          CARAVAN
+        </a>
+      </h1>
+    </header>
+
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-list-item">About</li>
+        <li class="nav-list-item">Topic</li>
+      </ul>
+    </nav>
+
+    <div class="main-visual">
+      <div class="main-visual-content">
+        <p class="main-visual-text">
+          The world is a book<br>and those who do not travel<br> only one page.
+        </p>
+        <p class="main-visual-name">
+          St. Augustine
+        </p>
+      </div>
+    </div>
+
+    <main><!-- このmain要素内にはheader,footer, nav要素は子要素にできない -->
+      <section class="blog">
+        <h2 class="blog-heading">Recent Blogs</h2>
+        <div class="blog-box">
+          <div class="blog-item">
+            <img class="blog-image" src="img/forest.jpg">
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  Hopeful lessons from<br>
+                  the battle to save<br>
+                  rainforests
+                </a>
+              </h3>
+              <p class="blog-date">June 19, 2017</p>
+              <span class="category">Nature</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/desert.jpg">
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  How to fight<br>
+                  desertification and<br>
+                  reverse climate change
+                </a>
+              </h3>
+              <p class="blog-date">June 17, 2017</p>
+              <span class="category">Nature</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/sunset.jpg">
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  Why I'm rowing<br>
+                  across the Pacific
+                </a>
+              </h3>
+              <p class="blog-date">June 16, 2017</p>
+              <span class="category">Adventure</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/italy.jpg">
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  Unseen footage,<br>
+                  untamed nature
+                </a>
+              </h3>
+              <p class="blog-date">June 15, 2017</p>
+              <span class="category">Nature</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/asia.jpg">
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  The case for<br>
+                  engineering our food
+                </a>
+              </h3>
+              <p class="blog-date">June 14, 2017</p>
+              <span class="category">Culture</span>
+            </section>
+          </div>
+        </div>
+        <div class="pagination">
+          <p><<</p>
+          <p><</p>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>></p>
+          <p>>></p>
+        </div>
+      </section>
+      
+      <div class="sidebar">
+        <section class="popular">
+          <h2 class="popular-heading common-heading">Popular</h2>
+          <div class="sidebar-contents">
+            <p class="popular-text">To solve old problems,<br>study new species</p>
+            <p class="popular-text">Why Earth may someday<br>look like Mars</p>
+            <p class="popular-text">What will humans look<br>like in 100 years?</p>
+            <p class="popular-text">How to grow a forest<br>in your backyard</p>
+            <p class="popular-text">How humans could evolve<br>to survive in space</p>
+          </div>
+        </section>
+        <section class="instagram">
+          <h2 class="instagram-heading common-heading">Instagram</h2>
+          <div class="sidebar-contents">
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+          </div>
+        </section>
+        <section class="categories">
+          <h2 class="categories-heading common-heading">Categories</h2>
+          <div class="sidebar-contents">
+            <p class="categories-text">Technology(15)</p>
+            <p class="categories-text">Business(23)</p>
+            <p class="categories-text">Entertainment(12)</p>
+            <p class="categories-text">Nature(32)</p>
+            <p class="categories-text">Education(9)</p>
+            <p class="categories-text">Adventure(23)</p>
+            <p class="categories-text">Communication(14)</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer-text">© All rights reserved by Infratop.Inc.</p>
+    </footer>
+  </body>
+</html>
+
+<!--
+--------インライン要素------------
+<span>
+<img>
+<br>
+<a>
+-->
+
+<!--
+-----------------ブロックレベル要素の特徴について------------------
+ブロック要素とは文書の骨組みとなる要素です(例えば見出しや段落など)。
+このタイプの要素は、横幅いっぱいの領域を持つので、
+要素の前後には自動的に改行が入ります。
+前後に入る！！！
+
+詳しくは下のリンク参照
+http://lab.agr.hokudai.ac.jp/useful/utile/BlockInline.htm#:~:text=%EF%BC%8A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E8%A6%81%E7%B4%A0%E3%81%AE%E4%B8%AD,%E5%85%A5%E3%82%8C%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82&text=%E6%96%87%E7%AB%A0%E4%B8%AD%E3%81%AE%E4%B8%80%E9%83%A8,%E6%94%B9%E8%A1%8C%E3%81%AF%E5%85%A5%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82
+
+------------------span要素とは？------------------------------
+span要素はそれ自体なんの意味も持ってないため、役割としては
+div要素と同じである。
+ただし、span要素はインライン要素であるため、テキストの一部を
+囲んでCSSを適用するために使ったりする。p要素内などで部分的に
+CSSを適用する際によく使われている。
+
+
+
+------------------section要素 vs div要素----------------------
+section要素はdiv要素と同じ挙動をするが、使い方に注意！
+
+>>>>> これはsectionタグの正しい使用方法です。
+ >>>>文章や節を示す時はsectionタグを使います
+<section>
+  <h2>サンプル1</h2>
+  <p>テキスト...</p>
+</section>
+
+
+>>>>>divタグはsectionタグと同じ挙動をしますが、
+ >>>>子要素に文章や節を作成する場合はsectionタグを使いましょう
+<div>
+  <h2>サンプル2</h2>
+  <p>テキスト...</p>
+</div>
+
+
+
+------------------ブロックレベル要素の改行のあれこれ--------------
+<h3></h3>       <=ブロックレベル要素
+<p></p>         <=ブロックレベル要素
+<span></span>   <=インライン要素
+
+まず前提として、ブロックレベル要素の前後には改行が入ることは知っているとする。
+上記の３行のコードにおいて、h3要素とp要素を並列にすることを考え、そのために
+h3だけをdisplay: inline-blockにしてもp要素の「前後に改行が入る」が有効なため
+横並びにならない。そのため、h3とpの両方をdisplay: inline-blockにしてh3とpの間
+の改行を消す必要がある。
+この知識で考えると、p要素とspan要素を横並びにするにはpのdisplayをinline-block
+にすればいい！
+以上をまとめると、displayを指定して横並びを実現するには、連続する要素２つの
+それぞれをインライン要素またはインラインブロック要素にする必要がある。
+インライン要素とブロック要素の連続じゃ横並びにならない！
+
+
+-------------------複数クラスの使い方-------------------------------
+<h2 class="text-blue text-big"></h2>
+のようにするとtext-blueとtext-bigのCSSを再利用できる！
+
+
+
+--------------------優先度の高いセレクター順-------------------------
+１. Inline style … （<p style="">）
+２. IDセレクタ … （#red）
+３. 疑似クラス … （:nth-child(n)、:hover ※このあとの項目で説明します）
+４. クラスセレクタ … （.blue）
+５. タイプセレクタ … （p{...}、h1{...}）
+６. 全称セレクタ … （*{...}）
+
+
+--------------「text-align」と「display:inline-block」----------------------
+text-alignは子要素を中央揃えにするだけ。横並びにはしない。
+display: inline-blockで横並びにする。
+
+または 
+display: flexで横並びにし、justify-content: center;で中央揃えにする。
+(justifyには左端または右端をそろえるという意味がある。)
+
+まとめると左右中央揃えにするには
+text-align + display:inline-block
+または
+display: flex + justify-content: center;
+をつかう。
