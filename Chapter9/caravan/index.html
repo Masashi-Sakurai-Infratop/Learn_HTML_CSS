@@ -2,16 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/393e5e8635.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>CARAVAN</title>
   </head>
   <body>
     <header>
       <h1 class="heading">
-        <a href="index.html">
-          CARAVAN
-        </a>
+        <a href="index.html">CARAVAN</a>
       </h1>
+      <div class="social">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
     </header>
 
     <nav>
@@ -117,7 +121,7 @@
           <p>>></p>
         </div>
       </section>
-      
+
       <div class="sidebar">
         <section class="popular">
           <h2 class="popular-heading common-heading">Popular</h2>
@@ -244,7 +248,7 @@ h3だけをdisplay: inline-blockにしてもp要素の「前後に改行が入�
 text-alignは子要素を中央揃えにするだけ。横並びにはしない。
 display: inline-blockで横並びにする。
 
-または 
+または
 display: flexで横並びにし、justify-content: center;で中央揃えにする。
 (justifyには左端または右端をそろえるという意味がある。)
 
@@ -253,3 +257,15 @@ text-align + display:inline-block
 または
 display: flex + justify-content: center;
 をつかう。
+
+
+---------------ブラウザにとってのファイル順--------------------------------
+ブラウザにとっては、下側に記述されているファイルが
+最新情報、つまり、重要性の高い情報になります。
+今回はjsファイルとcssファイルがそれぞれ一つのため競合することはないが、
+cssファイルを同じrel="stylesheet"で読み込んでいる場合は一番下のものが採用される。
+外部ファイルを読み込むときは優先順位を意識しよう。
+
+---------------相対位置と絶対位置------------------------------------------
+https://web-camp.online/lesson/curriculums/283/contents/2688
+
