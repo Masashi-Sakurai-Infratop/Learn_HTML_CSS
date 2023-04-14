@@ -107,8 +107,52 @@
             </section>
           </div>
         </div>
+        <div class="pagination">
+          <p><<</p>
+          <p><</p>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>></p>
+          <p>>></p>
+        </div>
       </section>
-      <div class="sidebar"></div>
+      
+      <div class="sidebar">
+        <section class="popular">
+          <h2 class="popular-heading common-heading">Popular</h2>
+          <div class="sidebar-contents">
+            <p class="popular-text">To solve old problems,<br>study new species</p>
+            <p class="popular-text">Why Earth may someday<br>look like Mars</p>
+            <p class="popular-text">What will humans look<br>like in 100 years?</p>
+            <p class="popular-text">How to grow a forest<br>in your backyard</p>
+            <p class="popular-text">How humans could evolve<br>to survive in space</p>
+          </div>
+        </section>
+        <section class="instagram">
+          <h2 class="instagram-heading common-heading">Instagram</h2>
+          <div class="sidebar-contents">
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+          </div>
+        </section>
+        <section class="categories">
+          <h2 class="categories-heading common-heading">Categories</h2>
+          <div class="sidebar-contents">
+            <p class="categories-text">Technology(15)</p>
+            <p class="categories-text">Business(23)</p>
+            <p class="categories-text">Entertainment(12)</p>
+            <p class="categories-text">Nature(32)</p>
+            <p class="categories-text">Education(9)</p>
+            <p class="categories-text">Adventure(23)</p>
+            <p class="categories-text">Communication(14)</p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -179,3 +223,33 @@ h3だけをdisplay: inline-blockにしてもp要素の「前後に改行が入�
 以上をまとめると、displayを指定して横並びを実現するには、連続する要素２つの
 それぞれをインライン要素またはインラインブロック要素にする必要がある。
 インライン要素とブロック要素の連続じゃ横並びにならない！
+
+
+-------------------複数クラスの使い方-------------------------------
+<h2 class="text-blue text-big"></h2>
+のようにするとtext-blueとtext-bigのCSSを再利用できる！
+
+
+
+--------------------優先度の高いセレクター順-------------------------
+１. Inline style … （<p style="">）
+２. IDセレクタ … （#red）
+３. 疑似クラス … （:nth-child(n)、:hover ※このあとの項目で説明します）
+４. クラスセレクタ … （.blue）
+５. タイプセレクタ … （p{...}、h1{...}）
+６. 全称セレクタ … （*{...}）
+
+
+--------------「text-align」と「display:inline-block」----------------------
+text-alignは子要素を中央揃えにするだけ。横並びにはしない。
+display: inline-blockで横並びにする。
+
+または 
+display: flexで横並びにし、justify-content: center;で中央揃えにする。
+(justifyには左端または右端をそろえるという意味がある。)
+
+まとめると左右中央揃えにするには
+text-align + display:inline-block
+または
+display: flex + justify-content: center;
+をつかう。
