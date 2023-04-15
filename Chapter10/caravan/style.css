@@ -56,8 +56,8 @@ header .heading { /*headerタグ内のheadingクラスにのみ反映される*/
 }
 
 .main-visual-content {
-  height: 300px;
   width: 40%;
+  height: 300px;
   background-color: rgba( 0, 0, 0, 0.5);
   text-align: center;
   padding-top: 105px;
@@ -223,7 +223,89 @@ footer {
   color: #fff;
 }
 
+@media screen and (max-width: 425px) {
+    .social {
+      display: none;
+    }
+    .nav-list-item {
+      display: block;
+      padding-bottom: 10px;
+    }
+    .main-visual {
+      width: 100vw;
+      height: 88vw;
+    }
+    .main-visual-content {
+      width: auto;
+      height: 100%;
+      background-color: rgba( 0, 0, 0, 0.5);
+      padding-top: 117px;
+    }
+    .main-visual-text {
+      line-height: 2.0;
+      font-size: 19px;
+    }
+    main {
+      width: auto;
+      display: block;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .blog {
+      width: auto;
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
+    .blog-box {
+      padding-top: 50px;
+    }
+    .category {
+      display: none;
+    }
+    .blog-image {
+      width: 47%;
+    }
+    .blog-item {
+      padding-left: 2%;
+    }
+    .blog-item:last-child {
+      border-bottom: none;
+      margin-bottom: 25px;
+    }
+    .pagination {
+      padding-top: 0px;
+    }
+    .sidebar {
+      width: auto;
+    }
 
+    .popular .sidebar-contents,
+    .categories .sidebar-contents {
+      display: block;
+    }
+
+    .sidebar-contents {
+      padding: 50px 2%;
+    }
+
+    .instagram {
+      display: block;
+    }
+    .instagram-box {
+      width: 40%;
+      padding: 98px;
+      margin-bottom: 10px;
+    }
+    .instagram-box:nth-child(odd) {
+      margin: 0 12px 12px 0;
+    }
+    .instagram-box:nth-child(2) {
+      margin: 0 0 12px 0;
+    }
+    .instagram-box:nth-child(4) {
+      margin: 0 0 12px 0;
+    }
+}
 /*全体適用と部分適用の違い
 <<<<ページ内すべてのh1要素に適応される>>>>
 h1 {
